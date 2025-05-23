@@ -31,7 +31,7 @@ const inputsArray = [
         validation: value => value.startsWith("https://"),
         errorText: "El formato de la url de la imagen es incorrecto"
     }
-    
+
 ]
 
 const uploadSubmit = (event) => {
@@ -58,6 +58,13 @@ const uploadSubmit = (event) => {
     }
 
     if (isValid) {
-        console.log(values)
+        const initialSeries = localStorage.getItem("series")
+
+        const series = initialSeries ? JSON.parse(initialSeries) : [];
+        
+        series.push({id: series.length + 1, ...values}); // ...values son los valores por separado de values
+        // spread es eso, separa todos los items del objeto para agregarle un id
+
+        localStorage.setItem("series", JSON.stringify(series))
     }
 }

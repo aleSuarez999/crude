@@ -6,7 +6,6 @@
     <title>Juguetería Cósmica</title>
     <link rel="stylesheet" href="./sass/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="./js/upload.js"></script>
 </head>
 <body>
     <header class="navbar__container">
@@ -17,7 +16,7 @@
     <div class="d-flex">
         <main class="container">
             <div class="grid">
-                <div class=" col-xl-4 col-lg-5 col-xs-12 ">
+                <div class=" col-xl-4 col-lg-6 col-xs-12 ">
                     <form class="form__container" onsubmit="uploadSubmit(event)">
                         <div class="form__input-group">
                             <label for="title" class="form__label" >Titulo</label>
@@ -60,6 +59,18 @@
 
                     </form>
                 </div>
+                <div id="series_container" class=" col-xl-8 col-lg-6 col-xs-12 ">
+                    <div class="card">
+                        <img src="https://m.media-amazon.com/images/M/MV5BOTRiYzk2MzItZWM4My00YzhhLWI4MDktNmM4NDc0YzAyNzM2XkEyXkFqcGc@._V1_QL75_UX328_.jpg" alt="">
+                        <div class="pl-3">
+                            <div>
+                                <h3>Games (2011): </h3>
+                                <span>Drama - "" - USA</span>
+                                <p>El libro mejor vendido de la serie "A Song of Ice and Fire" escrito por George R.R, es llevado a la pantalla chica cuando HBO decide recrear esta historia épica de fantasía. Es la descripción de dos familias poderosas, reyes y reinas, caballeros y renegados, hombres falsos y honestos, haciendo parte de un juego mortal por el control de los</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
     </div>
@@ -75,6 +86,8 @@
         </div>
     </footer>
     
-    
+    <script src="./js/upload.js"></script>
+    <script src="./js/readData.js"></script>
+
 </body>
 </html>

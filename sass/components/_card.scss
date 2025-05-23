@@ -1,13 +1,14 @@
 
 .card {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     border-radius: 0.5rem;
     background-color: $superlight-primary-color;
     border: 2px solid $strong-primary-color;
-    min-height: 400px;
+    //min-height: 400px;
+    height: 6rem;
     img {
         border-top-left-radius: 0.5rem;
-        border-top-right-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
     }
 }

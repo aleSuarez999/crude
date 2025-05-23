@@ -1260,15 +1260,15 @@ h1, h3 {
 
 .card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   border-radius: 0.5rem;
   background-color: #f4e1c5;
   border: 2px solid #fa9304;
-  min-height: 400px;
+  height: 6rem;
 }
 .card img {
   border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
 }
 
 .form__container .form__input-group {
